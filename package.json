@@ -1,0 +1,14 @@
+{
+  "name": "segunda-instancia",
+  "version": "1.0.0",
+  "description": "\"proyecto\"",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "\"jest\""
+  },
+  "author": "",
+  "license": "ISC"
+}
