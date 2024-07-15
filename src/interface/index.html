@@ -68,7 +68,7 @@
               </div>
               <div class="mb-3">
                 <label for="edadMascota" class="form-label">Edad de la Mascota</label>
-                <input type="number" class="form-control" id="edadMascota" name="edadMascota" required>
+                <input type="number" class="form-control" id="edadMascota" name="edadMascota" min="1" max="30">
               </div>
               <div class="mb-3">
                 <label for="tipoMascota" class="form-label">Tipo de Mascota</label>
@@ -188,7 +188,7 @@
       </div>
       <div class="mb-3">
         <label for="telefonoEntidad" class="form-label">Teléfono</label>
-        <input type="tel" class="form-control" id="telefonoEntidad" pattern="[0-9()+#- ]*" title="Solo se permiten números, +, (), #, - y espacios" required>
+        <input type="number" class="form-control" id="telefonoEntidad" required>
       </div>
       <div class="mb-3">
         <label for="emailEntidad" class="form-label">Email</label>
