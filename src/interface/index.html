@@ -64,11 +64,11 @@
             <form id="formularioMascotas">
               <div class="mb-3">
                 <label for="nombreMascota" class="form-label">Nombre de la Mascota</label>
-                <input type="text" class="form-control" id="nombreMascota" name="nombreMascota" required>
+                <input type="text" class="form-control" id="nombreMascota" name="nombreMascota" pattern="[a-z]" title="No se permiten caracteres especiales, solo letras." required>
               </div>
               <div class="mb-3">
                 <label for="edadMascota" class="form-label">Edad de la Mascota</label>
-                <input type="number" class="form-control" id="edadMascota" name="edadMascota" min="1" max="30">
+                <input type="number" class="form-control" id="edadMascota" name="edadMascota" pattern="{1,30}" title="No se permiten caracteres especiales, solo números." min="1" max="30">
               </div>
               <div class="mb-3">
                 <label for="tipoMascota" class="form-label">Tipo de Mascota</label>
@@ -89,11 +89,11 @@
               </div>
               <div class="mb-3">
                 <label for="razaMascota" class="form-label">Raza de la Mascota</label>
-                <input type="text" class="form-control" id="razaMascota" name="razaMascota" required>
+                <input type="text" class="form-control" id="razaMascota" name="razaMascota" pattern="[a-z]" title="No se permiten caracteres especiales, solo letras." required>
               </div>
               <div class="mb-3">
                 <label for="historiaMascota" class="form-label">Historia de la Mascota</label>
-                <input type="text" class="form-control" id="historiaMascota" name="historiaMascota" required>
+                <input type="text" class="form-control" id="historiaMascota" name="historiaMascota" pattern="[a-z]{1,15}" title="No se permiten caracteres especiales, solo números y letras." required>
               </div>
               <div class="mb-3">
                 <label for="fotoMascota" class="form-label">Foto de la Mascota</label>
