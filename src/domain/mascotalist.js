@@ -11,6 +11,7 @@ export class MascotaList {
         );
         if (!mascotaAgregada) {
             this.#mascotas.push(mascota);
+            alert("Mascota agregada correctamente");
         } else {
             throw new Error(`No se pudo agregar. ${mascota.getNombre()} ya está en la lista.`);
         }
