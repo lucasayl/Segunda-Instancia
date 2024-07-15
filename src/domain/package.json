@@ -1,20 +1,21 @@
 {
-  "name": "domainmod",
+  "name": "segunda-instancia",
   "version": "1.0.0",
-  "description": "",
-  "main": "country.js",
+  "description": "proyecto",
   "type": "module",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
-    "lint": "eslint .  *.js --no-warn-ignored --ignore-pattern '*.config.js'"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@eslint/js": "^9.3.0",
-    "eslint": "^9.3.0",
-    "globals": "^15.3.0",
-    "jest": "^29.5.0",
-    "typescript-eslint": "^7.11.0"
+    "jest": "^29.7.0",
+    "babel-jest": "^29.7.0",
+    "@babel/core": "^7.22.8",
+    "@babel/preset-env": "^7.22.8"
   }
 }

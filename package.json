@@ -1,7 +1,8 @@
 {
   "name": "segunda-instancia",
   "version": "1.0.0",
-  "description": "\"proyecto\"",
+  "description": "\"\"\"proyecto\"\"\"",
+  "type": "module",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -10,5 +11,26 @@
     "test": "jest"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "babel-jest": "^29.7.0",
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/preset-typescript": "^7.20.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^4.9.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "testMatch": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
+    "moduleFileExtensions": ["js", "mjs", "jsx", "ts", "tsx", "json", "node"],
+    "transformIgnorePatterns": ["<rootDir>/node_modules/"]
+  }
 }
